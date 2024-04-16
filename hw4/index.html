@@ -11,22 +11,112 @@
 
 <h2>Part 1</h2>
 
-<p>Take some screenshots of scene/pinned2.json from a viewing angle where you can clearly see the cloth wireframe to show the structure of your point masses and springs. Show us what the wireframe looks like (1) without any shearing constraints, (2) with only shearing constraints, and (3) with all constraints.</p>
+<p>- Take some screenshots of scene/pinned2.json from a viewing angle where you can clearly see the cloth wireframe to show the structure of your point masses and springs. Show us what the wireframe looks like (1) without any shearing constraints, (2) with only shearing constraints, and (3) with all constraints.</p>
 
-<p>Here is the scene where we can clearly see the structure of the point masses and springs:</p>
+<p>- Show us what the wireframe looks like (1) without any shearing constraints, (2) with only shearing constraints, and (3) with all constraints.</p>
+
+<p>Here is the scene where we can clearly see the structure of the point masses and springs.</p>
 <img src="images/firstPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
 
+<p>Here is another view highlighting the structure of the point masses and springs:</p>
+<img src="images/secondPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
+
+<p>Wireframe with no shearing constraints:</p>
+<img src="images/thirdPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
+
+<p> Wireframe with only shearing constraints: </p>
+<img src="images/fourthPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
+
+<p> Wireframe looks like with all constraints: </p>
+<img src="images/fifthPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
 <h2>Part 2</h2>
 
-<p>Experiment with some of the parameters in the simulation. Describe the effects of changing the spring constant \(k_s\), density, and damping. Show us a screenshot of your shaded cloth from scene/pinned4.json in its final resting state.</p>
-<img src="images/secondPlainImg.jpg" alt="Wireframe without shearing constraints" width="300">
+<ul>
+    <li>Experiment with some the parameters in the simulation. To do so, pause the simulation at the start with P, modify the values of interest, and then resume by pressing P again. You can also restart the simulation at any time from the cloth's starting position by pressing R.</li>
+    <li>Describe the effects of changing the spring constant \( k_s \):
+        <ul>
+            <li>How does the cloth behave from start to rest with a very low \( k_s \)?</li>
+            <li>What about for a high \( k_s \)?</li>
+        </ul>
+    </li>
+    <li>What about for density?</li>
+    <li>What about for damping?</li>
+    <li>For each of the above, observe any noticeable differences in the cloth compared to the default parameters and show us some screenshots of those interesting differences and describe when they occur.</li>
+    <li>Show us a screenshot of your shaded cloth from scene/pinned4.json in its final resting state! If you choose to use different parameters than the default ones, please list them.</li>
+</ul>
+
+<p>Testing parameters to see how it affects the cloth:</p>
+<ol>
+    <li>
+        <strong>Changing the spring constant \( k_s \):</strong>
+        <ol>
+            <li>
+                As the spring constant decreases, the reaction of the cloth to what it is experiencing decreases. What this means is that as the cloth falls, the way the cloth moves as it falls slows down.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <strong>Density:</strong>
+        <ol>
+            <li>
+                As Density increases, the cloth becomes more stiff, and this results in the cloth falling without moving or curving in ways you would expect when a cloth hits the air.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <strong>Damping:</strong>
+        <ol>
+            <li>
+                As Damping increases, the cloth moves slower. The way the cloth moves as it falls does not change, however.
+            </li>
+        </ol>
+    </li>
+</ol>
+<p>
+    With regard to damping, as the damping value increases the \( k_s \) value (from 0.2000 to 1), the rate at which the cloth falls decreases. The reason for this is dampening resists fast changes to motion and this essentially means that as the damping value increases, the motion of the cloth will slow down.
+    This may be hard to see with just screenshots, but I took screenshots of the falling of the cloth at the same time from the start of the cloth, and we can see the differences of how long it takes for them to fall. I took screenshots of both of the pieces of cloth 3 seconds after starting, so we can see the difference in how far they fall for different damping values.
+
+<p>Damping of 1:</p>
+<img src="images/Dampened1Val.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>Damping of 0.2:</p>
+<img src="images/Dampened0.2Val.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>Changing ks value:</p>
+<p>This is the cloth with ks increased. The new ks value is 50000. This makes sense to increase how taut the cloth is, which is what we can see relative to the previous cloth. Essentially, as the ks value increases, how taut the cloth is increases.</p>
+<img src="images/tautCloth.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>The Cloth Landing Still with Normal Parameters:</p>
+<img src="images/Dampened0.2Val.jpg" alt="Wireframe without shearing constraints" width="300">
 <h2>Part 3</h2>
 
-<p>Show us screenshots of your shaded cloth from scene/sphere.json in its final resting state on the sphere using the default \(k_s = 5000\) as well as with \(k_s = 500\) and \(k_s = 50000\). Describe the differences in the results. Show us a screenshot of your shaded cloth lying peacefully at rest on the plane.</p>
+<li>Show us screenshots of your shaded cloth from scene/sphere.json in its final resting state on the sphere using the default \( k_s = 5000 \) as well as with \( k_s = 500 \) and \( k_s = 50000 \). Describe the differences in the results.</li>
+<li>Show us a screenshot of your shaded cloth lying peacefully at rest on the plane. If you haven't by now, feel free to express your colorful creativity with the cloth! (You will need to complete the shaders portion first to show custom colors.)</li>
 
-<h2>Part 4</h2>
+<body>
+<p>Pictures of shaded cloth on final resting state on the sphere at different parameters.</p>
+<p>KS = 5000</p>
+<img src="images/5000KS.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>KS = 500</p>
+<img src="images/500KS.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>KS = 50000</p>
+<img src="images/50000KS.jpg" alt="Wireframe without shearing constraints" width="300">
 
-<p>Show us at least 3 screenshots that document how your cloth falls and folds on itself, starting with an early, initial self-collision and ending with the cloth at a more restful state. Vary the density as well as \(k_s\) and describe with words and screenshots how they affect the behavior of the cloth as it falls on itself.</p>
+<p>The Cloth is in different orientations for the different values of ks. As ks increases, the degree to which the cloth is away from the ball increases. The reason for this is that the ks is the spring constant of the ball, and as the spring constant increases, the amount the cloth is away from the ball should also increase. </p>
 
-</body>
+<p>Cloth Lying Peacefully on the Plane:</p>
+<img src="images/ClothLyingOnPlane.jpg" alt="Wireframe without shearing constraints" width="300">
+
+<p>Part 4</p> 
+<p>- Show us at least 3 screenshots that document how your cloth falls and folds on itself, starting with an early, initial self-collision and ending with the cloth at a more restful state (even if it is still slightly bouncy on the ground). </p>
+<p>- Vary the density as well as ks and describe with words and screenshots how they affect the behavior of the cloth as it falls on itself.</p>
+<p>Here are three screenshots of the cloth as it falls and folds itself, starting with the initial self-collision and ending with the cloth fully folded on the ground.</p>
+<img src="images/atFallingImage.jpg" alt="Wireframe without shearing constraints" width="300">
+<p></p>
+<img src="images/moreFallingImage.png" alt="Wireframe without shearing constraints" width="300">
+<p></p>
+<img src="images/finalFallingImg.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>As ks increases, the spring constant becomes bigger, which essentially means that the ability of the cloth to avoid decomposing into the ground increases as the increase in spring constant makes the cloth more taut as a result of the spring property of the cloth increasing.
+Here is an image of the cloth colliding with the ground with an increased ks value; the cloth has such a high spring constant that it can’t even start folding upon collision.</p>
+<img src="images/straightImage.jpg" alt="Wireframe without shearing constraints" width="300">
+<p>The same idea happens with density as the density values increases. The cloth essentially becomes more dense, which means it is harder for it to fold and shrink as it collides with the ground. Below is an example of the cloth colliding with the ground with an increased density value.</p>
+<img src="images/finalCollidingImage.jpg" alt="Wireframe without shearing constraints" width="300">
+<img src=""
 </html>
